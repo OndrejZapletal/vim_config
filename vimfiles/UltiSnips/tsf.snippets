@@ -1,0 +1,19 @@
+snippet _skel "File Banner" b
+'# Author: Ondrej Zapletal
+'# Date: `!v strftime("%Y-%m-%d")`
+'# Description: $0
+endsnippet
+
+snippet if
+If ${1:condition} Then
+	${0:${VISUAL:'TBD}}
+End If
+endsnippet
+	
+snippet fu
+'# $1 Function
+Public Function ${1:name}(${2:parmeters})
+	${0:${VISUAL:'TBD}}
+End Function
+endsnippet
+

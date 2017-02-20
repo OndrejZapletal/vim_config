@@ -1,0 +1,36 @@
+snippet _skel "File Banner" b
+'# Author: Ondrej Zapletal
+'# Date: `!v strftime("%Y-%m-%d")`
+'# Description: $0
+endsnippet
+
+snippet if
+If ${1:condition} Then
+	${0:${VISUAL:'If Body}}
+End If
+endsnippet
+	
+snippet fu
+'# $1 Function
+Function ${1:name}(${2:parmeters})
+	${0:${VISUAL:'Fun Body}}
+End Function
+endsnippet
+
+snippet dowh
+Do
+	${0:${VISUAL:'Do Body}}
+Loop While ${1:Condition}
+endsnippet
+
+snippet doun
+Do
+	${0:${VISUAL:'Do Body}}
+Loop Until ${1:Condition}
+endsnippet
+
+snippet for
+For ${1:i} = ${2:#} to ${3:#}
+	${0:${VISUAL:'For Body}}
+Next
+endsnippet
